@@ -1,0 +1,22 @@
+﻿@model Book
+
+<h1>Add New Book</h1>
+
+<form asp-action="Create">
+    <div>
+        <label>Title</label>
+        <input asp-for="Title" />
+        <span asp-validation-for="Title"></span>
+    </div>
+    <div>
+        <label>Author</label>
+        <input asp-for="Author" />
+        <span asp-validation-for="Author"></span>
+    </div>
+    <div>
+        <label>Year Published</label>
+        <input asp-for="YearPublished" />
+        <span asp-validation-for="YearPublished"></span>
+    </div>
+    <button type="submit">Save</button>
+</form>
